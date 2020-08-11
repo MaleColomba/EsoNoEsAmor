@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Architects Daughter', sans-serif;
+    font-size: 30px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* **************************************
+*************** TITULO *****************
+***************************************** */
+
+
+
+
+/* **************************************
+*************** ESCENA 1 *****************
+***************************************** */
+.escena1{
+    background: url(../img/escalera.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+/* **************************************
+*************** ESCENA 2 *****************
+***************************************** */
+.escena2{
+    background: url(../img/cocina1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* **************************************
+*************** SELECCION 1 *****************
+***************************************** */
+
+.seleccion1 article{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* ESCENA 3.1 */
+
+.seleccion1 article:nth-child(2){
+    background: url(../img/cocina1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* ESCENA 3.2 */
+
+.seleccion1 article:nth-child(3){
+    background: url(../img/cocina1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* **************************************
+*************** ESCENA 4 *****************
+***************************************** */
+
+.escena4{
+    background: url(../img/cocina1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* **************************************
+*************** ESCENA 5 *****************
+***************************************** */
+
+.escena5{
+    background: url(../img/escalera.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+/* **************************************
+*************** ESCENA 6 *****************
+***************************************** */
+
+.escena6{
+    background: url(../img/habitacion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+/* **************************************
+********** FINAL 1 BIBLIOTECA ************
+***************************************** */
+
+.seleccion2 article:nth-child(2){
+    background: url(../img/libros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* **************************************
+************* FINAL 2 MAMA **************
+***************************************** */
+
+.seleccion2 article:nth-child(3){
+    background: url(../img/living2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+/* **************************************
+*************** FLECHAS *****************
+***************************************** */
+
+.titulo .contenedor-icono, .escena1 .contenedor-icono,
+.escena2 .contenedor-icono, .escena3 .contenedor-icono,
+.escena5 .contenedor-icono,.escena6 .contenedor-icono,
+.estadisticas1 .contenedor-icono, .estadisticas2 .contenedor-icono,
+.seleccion1 .contenedor-icono0, .seleccion2 .contenedor-icono0,
+.seleccion1 .contenedor-icono1{
+    z-index: 99;
+    bottom: 3%;
+    animation: bajar-subir 1s ease infinite;
+}
+
+.escena1 .contenedor-icono,
+.escena2 .contenedor-icono, .escena3 .contenedor-icono,
+.escena5 .contenedor-icono,.escena6 .contenedor-icono,
+.estadisticas1 .contenedor-icono, .estadisticas2 .contenedor-icono{left: 50%;}
+
+.seleccion1 .contenedor-icono, .seleccion2 .contenedor-icono{left: 16.2%;}
+
+.seleccion1 .contenedor-icono0, .seleccion2 .contenedor-icono0{left: 50%;}
+
+.seleccion1 .contenedor-icono1, .seleccion2 .contenedor-icono1{left: 83%;}
+
+.titulo .contenedor-icono-costado-der, .estadisticas2 .contenedor-icono-costado-der,
+.seleccion-desayuno .contenedor-icono-costado-der,
+.seleccion-final .contenedor-icono-costado-der,
+.seleccion-desayuno .contenedor-icono-costado-izq,
+.seleccion-final .contenedor-icono-costado-izq{
+    z-index: 98;
+    animation: der-izq 1s ease infinite;
+}
+
+.titulo .contenedor-icono, .escena1 .contenedor-icono,
+.escena2 .contenedor-icono, .escena3 .contenedor-icono,
+.escena5 .contenedor-icono,.escena6 .contenedor-icono,
+.estadisticas1 .contenedor-icono, .estadisticas2 .contenedor-icono,
+.seleccion1 .contenedor-icono0, .seleccion2 .contenedor-icono0,
+.seleccion1 .contenedor-icono1, .estadisticas2 .contenedor-icono-costado-der,
+.titulo .contenedor-icono-costado-der, .seleccion-final .contenedor-icono-costado-der,
+.seleccion-desayuno .contenedor-icono-costado-der,
+.seleccion-desayuno .contenedor-icono-costado-izq,
+.seleccion-final .contenedor-icono-costado-izq{
+    position: absolute;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 251, 251, 0.267);
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+i{color: rgb(255, 0, 0);}
+
+.titulo .contenedor-icono-costado-der, .estadisticas2 .contenedor-icono-costado-der{left: 95%;}
+
+.seleccion-desayuno .contenedor-icono-costado-der, .seleccion-final .contenedor-icono-costado-der{left: 32%;}
+
+.seleccion-desayuno .contenedor-icono-costado-izq, .seleccion-final .contenedor-icono-costado-izq{left: 0%;}
+
+.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev{top:54%}
+.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next{opacity: 0;}
+
+@keyframes bajar-subir {
+    0% {transform: translateY(20px);}
+    25% {transform: translateY(0);}
+    100% {transform: translateY(20px);}
+}
+
+@keyframes der-izq {
+    0% {transform: translate(20px);}
+    25% {transform: translate(0);}
+    100% {transform: translate(20px);}
+}
+
