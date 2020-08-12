@@ -1,12 +1,20 @@
+main{
+    background-color: rgb(32, 32, 32);
+    background-size: cover;
+    z-index: 0;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body{
     font-family: 'Architects Daughter', sans-serif;
     font-size: 30px;
+    font-family: 'Acme', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -15,56 +23,175 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* **************************************
+*************** ESTILOS DE TEXTO *****************
+***************************************** */
+
+.decisiones{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    display: table;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+.decisiones p{
+    display: table-cell;
+    margin: 0;
+    padding: 0 1rem;
+    vertical-align: middle;
+}
+
+.cuento{
+    margin: auto;
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.63);
+    position: absolute;
+    display: table;
+    text-align: center;
+    justify-content: center;
+}
+
+.cuento p{
+    display: table-cell;
+    margin: 0;
+    padding: 0 1rem;
+    vertical-align: middle;
+}
+
+/* **************************************
 *************** TITULO *****************
 ***************************************** */
 
+.titulo{
+    background: url(../img/fondo/casa.jpg);
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
 
-
+.titulo .decisiones p{
+    font-size: 500px;
+}
 
 /* **************************************
 *************** ESCENA 1 *****************
 ***************************************** */
 .escena1{
-    background: url(../img/escalera.jpg);
+    background: url(../img/fondo/escalera.jpg);
+    z-index: 1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+}
+
+.bajando-escalera{
+    width: 20%;
+    position: absolute;
+    left: 33%;
+    bottom: 50%;
+}
+
+.titulo .cuento .p{
+    font-size: 80px;
 }
 
 /* **************************************
 *************** ESCENA 2 *****************
 ***************************************** */
 .escena2{
-    background: url(../img/cocina1.jpg);
+    background: url(../img/fondo/cocina1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
+.silla{
+    width: 37%;
+    position: absolute;
+    left: 60%;
+    top: 46%;
+}
+
+.puerta{
+    left: 10%;
+}
+
+.abuela-saludo{
+    width: 30%;
+    position: absolute;
+    left: 66%;
+    top: 20%;
+}
+
+.nena-saludo{
+    width: 24%;
+    position: absolute;
+    left: 30%;
+    top: 44%;
+}
 
 /* **************************************
 *************** SELECCION 1 *****************
 ***************************************** */
 
-.seleccion1 article{
+.seleccion1{
+    background: url(../img/fondo/casa.jpg);
+    z-index: 1;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 90% 100%;
+}
+
+.seleccion1{
+    font-size: 200px;
 }
 
 /* ESCENA 3.1 */
 
 .seleccion1 article:nth-child(2){
-    background: url(../img/cocina1.jpg);
+    background-image: url(../img/fondo/cocina1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-attachment: local;
+}
+
+.abuela-neutra{
+    width: 45%;
+    position: absolute;
+    left: 58%;
+    top: 20%;
+}
+
+.silla1{
+    width: 37%;
+    position: absolute;
+    left: 60%;
+    top: 46%;
+}
+
+.madre-pijama{
+    width: 42%;
+    position: absolute;
+    left: 5%;
+    top: 8%;
+}
+
+.nena-feliz{
+    width: 35%;
+    position: absolute;
+    left: 30%;
+    top: 42%;
 }
 
 /* ESCENA 3.2 */
 
 .seleccion1 article:nth-child(3){
-    background: url(../img/cocina1.jpg);
+    background-image: url(../img/fondo/cocina1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -75,10 +202,34 @@ h1, h2, h3, h4, h5, h6{
 ***************************************** */
 
 .escena4{
-    background: url(../img/cocina1.jpg);
+    background: url(../img/fondo/cocina1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.madre-mala{
+    width: 42%;
+    position: absolute;
+    left: 20%;
+    top: 8%;
+}
+
+.nena-llora{
+    width: 40%;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+
+.madre-mala:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.nena-llora:hover{
+    transform: scale(0.8);
+    transition: 1s;
 }
 
 /* **************************************
@@ -86,10 +237,42 @@ h1, h2, h3, h4, h5, h6{
 ***************************************** */
 
 .escena5{
-    background: url(../img/escalera.jpg);
+    background: url(../img/fondo/escalera.jpg);
+    z-index: 1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+}
+
+.madre-pelea{
+    width: 42%;
+    position: absolute;
+    left: 30%;
+    top: 7%;
+}
+
+.abuela-pelea{
+    width: 42%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+.abuela-pelea:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.nena-pelea{
+    width: 25%;
+    position: absolute;
+    left: 18%;
+    top: 7%;
+}
+
+.madre-pelea:hover{
+    transform: scale(0.8);
+    transition: 1s;
 }
 
 /* **************************************
@@ -97,10 +280,34 @@ h1, h2, h3, h4, h5, h6{
 ***************************************** */
 
 .escena6{
-    background: url(../img/habitacion.jpg);
+    background: url(../img/fondo/habitacion.jpg);
+    z-index: 1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+}
+
+.nena-panico{
+    width: 22%;
+    position: absolute;
+    left: 46%;
+    top: 25%;
+}
+
+/* **************************************
+************ SELECCION 2 ****************
+***************************************** */
+
+.seleccion2{
+    background: url(../img/fondo/casa.jpg);
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+.seleccion2 .decisiones p{
+    font-size: 200px;
 }
 
 /* **************************************
@@ -108,10 +315,22 @@ h1, h2, h3, h4, h5, h6{
 ***************************************** */
 
 .seleccion2 article:nth-child(2){
-    background: url(../img/libros.jpg);
+    background: url(../img/fondo/libros.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.psicologa{
+    width: 18%;
+    position: absolute;
+    left: 34%;
+    top: 8%;
+}
+
+.psicologa:hover{
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 /* **************************************
@@ -119,10 +338,70 @@ h1, h2, h3, h4, h5, h6{
 ***************************************** */
 
 .seleccion2 article:nth-child(3){
-    background: url(../img/living2.png);
+    background: url(../img/fondo/living2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+}
+
+.madre-hija{
+    width: 17%;
+    position: absolute;
+    left: 75%;
+    top: 6%;
+}
+
+.madre-hija:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+/* **************************************
+************* ESTADISTICAS 1 **************
+***************************************** */
+
+.estadisticas1{
+    background: url(../img/fondo/casa.jpg);
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+.estadisticas1 .decisiones p{
+    font-size: 100px;
+}
+
+/* **************************************
+************* ESTADISTICAS 2 **************
+***************************************** */
+
+.estadisticas2{
+    background: url(../img/fondo/casa.jpg);
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+.estadisticas2 .decisiones p{
+    font-size: 100px;
+}
+
+/* **************************************
+***************** FIN *******************
+***************************************** */
+
+.fin{
+    background: url(../img/fondo/casa.jpg);
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+.fin .decisiones p{
+    font-size: 450px;
 }
 
 /* **************************************
@@ -130,7 +409,7 @@ h1, h2, h3, h4, h5, h6{
 ***************************************** */
 
 .titulo .contenedor-icono, .escena1 .contenedor-icono,
-.escena2 .contenedor-icono, .escena3 .contenedor-icono,
+.escena2 .contenedor-icono, .escena4 .contenedor-icono,
 .escena5 .contenedor-icono,.escena6 .contenedor-icono,
 .estadisticas1 .contenedor-icono, .estadisticas2 .contenedor-icono,
 .seleccion1 .contenedor-icono0, .seleccion2 .contenedor-icono0,
@@ -141,7 +420,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .escena1 .contenedor-icono,
-.escena2 .contenedor-icono, .escena3 .contenedor-icono,
+.escena2 .contenedor-icono, .escena4 .contenedor-icono,
 .escena5 .contenedor-icono,.escena6 .contenedor-icono,
 .estadisticas1 .contenedor-icono, .estadisticas2 .contenedor-icono{left: 50%;}
 
@@ -161,7 +440,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .titulo .contenedor-icono, .escena1 .contenedor-icono,
-.escena2 .contenedor-icono, .escena3 .contenedor-icono,
+.escena2 .contenedor-icono, .escena4 .contenedor-icono,
 .escena5 .contenedor-icono,.escena6 .contenedor-icono,
 .estadisticas1 .contenedor-icono, .estadisticas2 .contenedor-icono,
 .seleccion1 .contenedor-icono0, .seleccion2 .contenedor-icono0,
@@ -191,7 +470,7 @@ i{color: rgb(255, 0, 0);}
 .seleccion-desayuno .contenedor-icono-costado-izq, .seleccion-final .contenedor-icono-costado-izq{left: 0%;}
 
 .fp-controlArrow.fp-next, .fp-controlArrow.fp-prev{top:54%}
-.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next{opacity: 0;}
+/*.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next{opacity: 0;}*/
 
 @keyframes bajar-subir {
     0% {transform: translateY(20px);}
