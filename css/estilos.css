@@ -43,10 +43,9 @@ h1, h2, h3, h4, h5, h6{
     vertical-align: middle;
 }
 
+/*
 .cuento{
     margin: auto;
-    width: auto;
-    height: auto;
     background-color: rgba(255, 255, 255, 0.63);
     position: absolute;
     display: table;
@@ -60,6 +59,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 0 1rem;
     vertical-align: middle;
 }
+*/
 
 /* **************************************
 *************** TITULO *****************
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .titulo .decisiones p{
-    font-size: 500px;
+    font-size: 400%;
 }
 
 /* **************************************
@@ -93,11 +93,23 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     left: 33%;
     bottom: 50%;
+    transition: 3s;
+    animation: escalera 1s;
 }
+
+/*.bajando-escalera:hover{
+    transform:translateY(300px);
+}*/
 
 .titulo .cuento .p{
     font-size: 80px;
 }
+
+@keyframes escalera{
+    0% {transform: translateY(0px);}
+    100%{transform:translateY(300px);}
+}
+
 
 /* **************************************
 *************** ESCENA 2 *****************
@@ -213,6 +225,7 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     left: 20%;
     top: 8%;
+    transition: 1s;
 }
 
 .nena-llora{
@@ -224,13 +237,13 @@ h1, h2, h3, h4, h5, h6{
 
 .madre-mala:hover{
     transform: scale(1.2);
-    transition: 1s;
 }
 
 .nena-llora:hover{
-    transform: scale(0.8);
-    transition: 1s;
+    transition: 2s;
+    transform: translateX(100px);
 }
+
 
 /* **************************************
 *************** ESCENA 5 *****************
@@ -254,12 +267,12 @@ h1, h2, h3, h4, h5, h6{
 .abuela-pelea{
     width: 42%;
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 10%;
 }
 
 .abuela-pelea:hover{
-    transform: scale(1.2);
+    transform: scale(1.2) translateX(-300px);
     transition: 1s;
 }
 
@@ -271,7 +284,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .madre-pelea:hover{
-    transform: scale(0.8);
+    transform: scale(1.3);
     transition: 1s;
 }
 
@@ -369,7 +382,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .estadisticas1 .decisiones p{
-    font-size: 100px;
+    font-size: 250%;
 }
 
 /* **************************************
@@ -385,7 +398,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .estadisticas2 .decisiones p{
-    font-size: 100px;
+    font-size: 250%;
 }
 
 /* **************************************
@@ -413,7 +426,7 @@ h1, h2, h3, h4, h5, h6{
 .escena5 .contenedor-icono,.escena6 .contenedor-icono,
 .estadisticas1 .contenedor-icono, .estadisticas2 .contenedor-icono,
 .seleccion1 .contenedor-icono0, .seleccion2 .contenedor-icono0,
-.seleccion1 .contenedor-icono1{
+.seleccion1 .contenedor-icono1, .seleccion2 .contenedor-icono1{
     z-index: 99;
     bottom: 3%;
     animation: bajar-subir 1s ease infinite;
@@ -428,7 +441,8 @@ h1, h2, h3, h4, h5, h6{
 
 .seleccion1 .contenedor-icono0, .seleccion2 .contenedor-icono0{left: 50%;}
 
-.seleccion1 .contenedor-icono1, .seleccion2 .contenedor-icono1{left: 83%;}
+.seleccion1 .contenedor-icono1{left: 50%;}
+.seleccion2 .contenedor-icono1{left: 84%;}
 
 .titulo .contenedor-icono-costado-der, .estadisticas2 .contenedor-icono-costado-der,
 .seleccion-desayuno .contenedor-icono-costado-der,
@@ -437,6 +451,7 @@ h1, h2, h3, h4, h5, h6{
 .seleccion-final .contenedor-icono-costado-izq{
     z-index: 98;
     animation: der-izq 1s ease infinite;
+    bottom: 50%;
 }
 
 .titulo .contenedor-icono, .escena1 .contenedor-icono,
@@ -448,7 +463,8 @@ h1, h2, h3, h4, h5, h6{
 .titulo .contenedor-icono-costado-der, .seleccion-final .contenedor-icono-costado-der,
 .seleccion-desayuno .contenedor-icono-costado-der,
 .seleccion-desayuno .contenedor-icono-costado-izq,
-.seleccion-final .contenedor-icono-costado-izq{
+.seleccion-final .contenedor-icono-costado-izq,
+.seleccion2 .contenedor-icono1{
     position: absolute;
     font-size: 40px;
     width: 50px;
@@ -461,16 +477,16 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
 }
 
-i{color: rgb(255, 0, 0);}
+i{color: rgb(255, 255, 255);}
 
 .titulo .contenedor-icono-costado-der, .estadisticas2 .contenedor-icono-costado-der{left: 95%;}
 
-.seleccion-desayuno .contenedor-icono-costado-der, .seleccion-final .contenedor-icono-costado-der{left: 32%;}
-
+.seleccion-final .contenedor-icono-costado-der{left: 32%;}
+.seleccion-desayuno .contenedor-icono-costado-der{left: 95%;}
 .seleccion-desayuno .contenedor-icono-costado-izq, .seleccion-final .contenedor-icono-costado-izq{left: 0%;}
 
 .fp-controlArrow.fp-next, .fp-controlArrow.fp-prev{top:54%}
-/*.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next{opacity: 0;}*/
+.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next{opacity: 0;}
 
 @keyframes bajar-subir {
     0% {transform: translateY(20px);}
