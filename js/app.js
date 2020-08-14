@@ -24,7 +24,7 @@ new fullpage('#fullpage', {
 
 	//Desplazamiento
 	css3: true,
-	scrollingSpeed: 0,
+	scrollingSpeed: 1000,
 	autoScrolling: true,
 	fitToSection: true,
 	fitToSectionDelay: 1000,
