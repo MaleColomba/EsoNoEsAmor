@@ -1,7 +1,7 @@
 main{
-    background-color: rgb(32, 32, 32);
     background-size: cover;
     z-index: 0;
+    background-color: rgb(58, 60, 61);
 }
 
 *{
@@ -23,6 +23,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* **************************************
+*************** COLORES DE CONTENEDORES *****************
+***************************************** */
+
+/*.titulo, .escena1, .seleccion1,
+.escena5, .escena6, .seleccion2,
+.estadisticas1, .estadisticas2, .fin{background-color: rgb(58, 60, 61);}*/
+
+/* **************************************
 *************** ESTILOS DE TEXTO *****************
 ***************************************** */
 
@@ -33,7 +41,6 @@ h1, h2, h3, h4, h5, h6{
     display: table;
     text-align: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.63);
 }
 
 .decisiones p{
@@ -44,7 +51,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .cuento{
-    background-color: rgba(255, 255, 255, 0.63);
     display: table;
     padding: 20px;
 }
@@ -72,6 +78,7 @@ h1, h2, h3, h4, h5, h6{
 
 .titulo .decisiones p{
     font-size: 400%;
+    background-color: rgba(236, 87, 250, 0.637);
 }
 
 .narradora-saludo{
@@ -79,6 +86,26 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     left: -20%;
     bottom: -30%;
+    transition: 4s;
+}
+
+.esono{
+    width: 70%;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+}
+
+.corazon{
+    width: 6%;
+    position: absolute;
+    right: 13%;
+    top: 43%;
+    transition: 2s;
+}
+
+.corazon:hover{
+    transform: scale(1.5);
 }
 
 /* **************************************
@@ -102,6 +129,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .escena1-texto{
+    background-color: rgba(247, 181, 105, 0.637);
     float: right;
     margin-right: 18%;
     margin-top: 20%;
@@ -162,11 +190,24 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .escena2-texto{
+    background-color: rgba(236, 87, 250, 0.637);
     float: left;
     margin-left: 5%;
     margin-top: -17%;
     width: 30%;
     height: 25%;
+}
+
+.nada{
+    width: 15%;
+    position: absolute;
+    right: 31%;
+    top: 48%;
+    transition: 2s;
+}
+
+.nada:hover{
+    transform: scale(1.5);
 }
 
 .escena2-texto p{font-size: 125%;}
@@ -177,6 +218,7 @@ h1, h2, h3, h4, h5, h6{
 
 .seleccion1{
     background: url(../img/fondo/casa.jpg);
+    background-color: rgb(58, 60, 61);
     z-index: 1;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,6 +228,33 @@ h1, h2, h3, h4, h5, h6{
 .seleccion1{
     font-size: 200px;
 }
+
+.ddl{
+    width: 40%;
+    position: absolute;
+    right: 0px;
+    top: 35%;
+    transition: 2s;
+}
+
+.mermelada{
+    width: 30%;
+    position: absolute;
+    left: 20px;
+    top: 45%;
+    transition: 2s;
+}
+
+.ddl:hover{
+    transform: scale(1.5);
+}
+
+.mermelada:hover{
+    transform: scale(1.5);
+}
+
+.seleccion1 .decisiones{
+    background-color: rgba(247, 181, 105, 0.637);}
 
 /* ESCENA 3 */
 
@@ -222,6 +291,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: -20%;
     width: 35%;
     height: 30%;
+    background-color: rgba(247, 181, 105, 0.637);
 }
 
 .escena3-texto p{font-size: 15%;}
@@ -236,6 +306,18 @@ h1, h2, h3, h4, h5, h6{
     background-attachment: local;
 }
 
+.dulce{
+    width: 15%;
+    position: absolute;
+    right: 27%;
+    top: 50%;
+    transition: 2s;
+}
+
+.dulce:hover{
+    transform: scale(1.5);
+}
+
 /* ESCENA 3.2 */
 
 .seleccion1 article:nth-child(3){
@@ -243,6 +325,18 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.merme{
+    width: 15%;
+    position: absolute;
+    right: 27%;
+    top: 50%;
+    transition: 2s;
+}
+
+.merme:hover{
+    transform: scale(1.5);
 }
 
 /* **************************************
@@ -286,6 +380,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 4%;
     width: 20%;
     height: 45%;
+    background-color: rgba(236, 87, 250, 0.637);
 }
 
 .escena4-texto p{font-size: 120%;}
@@ -300,6 +395,7 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+    background-color: rgb(58, 60, 61);
 }
 
 .madre-pelea{
@@ -339,6 +435,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 35%;
     width: 60%;
     height: 20%;
+    background-color: rgba(247, 181, 105, 0.637);
 }
 
 .escena5-texto p{font-size: 125%;}
@@ -353,6 +450,7 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+    background-color: rgb(58, 60, 61);
 }
 
 .nena-panico{
@@ -368,6 +466,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 3%;
     width: 27%;
     height: 45%;
+    background-color: rgba(236, 87, 250, 0.637);
 }
 
 .escena6-texto p{font-size: 120%;}
@@ -382,11 +481,42 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+    background-color: rgb(58, 60, 61);
+}
+
+span{
+    font-size: 50px;
 }
 
 .seleccion2 .decisiones p{
     font-size: 200px;
+    background-color: rgba(247, 181, 105, 0.637);
 }
+
+.terapia{
+    width: 10%;
+    position: absolute;
+    right: 69%;
+    top: 33%;
+    transition: 2s;
+}
+
+.libros{
+    width: 10%;
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    transition: 2s;
+}
+
+.terapia:hover{
+    transform: scale(1.5);
+}
+
+.libros:hover{
+    transform: scale(1.5);
+}
+
 
 /* **************************************
 ********** FINAL 1 BIBLIOTECA ************
@@ -418,6 +548,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 4%;
     width: 40%;
     height: 45%;
+    background-color: rgba(247, 181, 105, 0.637);
 }
 
 .final1-texto p{font-size: 120%;}
@@ -432,6 +563,7 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+    background-color: rgb(58, 60, 61);
 }
 
 .madre-hija{
@@ -452,6 +584,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 3%;
     width: 20%;
     height: 45%;
+    background-color: rgba(247, 181, 105, 0.637);
 }
 
 .final2-texto p{font-size: 120%;}
@@ -466,10 +599,12 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+    background-color: rgb(58, 60, 61);
 }
 
 .estadisticas1 .decisiones p{
     font-size: 250%;
+    background-color: rgba(236, 87, 250, 0.637);
 }
 
 /* **************************************
@@ -482,10 +617,12 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+    background-color: rgb(58, 60, 61);
 }
 
 .estadisticas2 .decisiones p{
     font-size: 250%;
+    background-color: rgba(236, 87, 250, 0.637);
 }
 
 /* **************************************
@@ -498,11 +635,19 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90% 100%;
+    background-color: rgb(58, 60, 61);
 }
 
 .fin .decisiones p{
+    background-color: rgba(247, 181, 105, 0.637);
     font-size: 450px;
 }
+
+.narradora-saludo:hover{
+    transition: 1s;
+    transform: translateX(700px);
+}
+
 
 /* **************************************
 *************** FLECHAS *****************
@@ -556,7 +701,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: 40px;
     width: 50px;
     height: 50px;
-    background-color: rgba(255, 251, 251, 0.267);
+    background-color: rgba(233, 140, 96, 0.726);
     border-radius: 50%;
     display: flex;
     text-align: center;
@@ -564,7 +709,7 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
 }
 
-i{color: rgb(255, 255, 255);}
+i{color: rgb(205, 5, 255);}
 
 .titulo .contenedor-icono-costado-der, .estadisticas2 .contenedor-icono-costado-der{left: 95%;}
 
